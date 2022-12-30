@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.stars{
+    position: absolute;
+}
+.hills{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.countdown{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.container div{
+    margin: 10px;
+}
+.container h1{
+    color: whitesmoke;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+.countdown p{
+    padding: 20px;
+    background-color: hsl(236, 21%, 26%);
+    border-radius: 5px;
+    font-size: 40px;
+    color: hsl(345, 95%, 68%);
+}
+.countdown h3{
+    color: hsl(237, 18%, 59%);
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.socials ul{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;   
+    transform: translateX(-50%); 
+    z-index: 5;
+}
+.socials ul{
+    display: flex;
+}
+.socials ul li{
+    margin:0 20px;
+}
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Red Hat Text', sans-serif;
+    background-color: hsl(235, 16%, 14%);
+}
+
+
+@media (min-width:500px){
+    .container{
+        min-width: auto
+    }
+}
+
+@media (min-width:1440px) { 
+    .stars img,.hills img{
+        width: 100vw;
+    }
+}
